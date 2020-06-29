@@ -5,11 +5,19 @@ package module.one.loops;
  */
 
 public class Task03 {
+
 	public static void main(String[] args) {
-		long result = 0;
-		for (int i = 1; i <= 100; i++) {
+
+		int result;
+		result = 0;
+		
+		for (int i = 0; i < 100; i++) {
+			
 			result += i * i;
 		}
-		System.out.printf("result = %d", result);
+
+		System.out.printf("Сумма квадратов первых ста чисел = %d", result);
+
 	}
+
 }

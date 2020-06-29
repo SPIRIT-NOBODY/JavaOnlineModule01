@@ -6,22 +6,36 @@ package module.one.conditional;
  */
 
 public class Task04 {
+
 	public static void main(String[] args) {
 
-		double a = 50;
-		double b = 30;
-		double x = 29;
-		double y = 45;
-		double z = 60.5;
+		double a;
+		double b;
+		double x;
+		double y;
+		double z;
+
+		a = 50;
+		b = 30;
+		x = 29;
+		y = 45;
+		z = 60.5;
 
 		if (testSide(x, y, a, b) || testSide(x, z, a, b) || testSide(y, z, a, b)) {
+
 			System.out.println("Кирпич проходит");
+
 		} else {
+
 			System.out.println("Кирпич не проходит");
+
 		}
+
 	}
 
 	private static boolean testSide(double x, double y, double a, double b) {
+
 		return ((x <= a && y <= b) || (x <= b && y <= a));
+
 	}
 }

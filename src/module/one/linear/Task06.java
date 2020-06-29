@@ -7,27 +7,10 @@ import java.util.Scanner;
  * точка с координатами (х, у) принадлежит закрашенной области, и false — в
  * противном случае:
  */
+
 public class Task06 {
+	
 	public static void main(String[] args) {
-
-		@SuppressWarnings("resource")
-		Scanner scanner = new Scanner(System.in);
-		
-		System.out.println("Введите pointX");
-		while (!scanner.hasNextDouble()) {
-			scanner.nextLine();
-			System.out.println("Введите pointX");
-		}
-		double pointX = scanner.nextDouble();
-		System.out.println("pointX = " + pointX);
-
-		System.out.println("Введите pointY");
-		while (!scanner.hasNextDouble()) {
-			scanner.nextLine();
-			System.out.println("Введите pointY");
-		}
-		double pointY = scanner.nextDouble();
-		System.out.println("pointY = " + pointY);
 		
 		/*
 		 * Принадлежность к первому прямоугольнику можно описать системой равенств:
@@ -47,18 +30,35 @@ public class Task06 {
 		 * x0 = 0 
 		 * y0 = -1 
 		 * a = 0.5 
-		 * b = 0.9		 *
+		 * b = 0.9
 		 */
 		
-		double x0 = 0;
-		double y0 = -1;
-		double a = 0.5;
-		double b = 0.9;
+		double pointX = 2;	
+		double pointY = 3;		
+		double x0 ; 
+		double y0;
+		double a;
+		double b;
 		
-		boolean inFirstRect = (pointX <= 2 && pointX >= -2 && pointY <= 4 && pointY >= 0);
-		boolean inSecondRect = (pointX <= 4 && pointX >= -4 && pointY <= 0 && pointY >= -3);
-		boolean inEllipse = (Math.pow((pointX - x0), 2) / (a * a) + Math.pow((pointY - y0), 2) / (b * b) < 1);
-		boolean isInside = (!inEllipse && (inFirstRect || inSecondRect));
+		boolean inFirstRect;
+		boolean inSecondRect;
+		boolean inEllipse;
+		boolean isInside;		
+		
+		x0 = 0;
+		y0 = -1;
+		a = 0.5;
+		b = 0.9;
+
+		inFirstRect = pointX <= 2 && pointX >= -2 && pointY <= 4 && pointY >= 0;
+		
+		inSecondRect = pointX <= 4 && pointX >= -4 && pointY <= 0 && pointY >= -3;
+		
+		inEllipse = Math.pow((pointX - x0), 2) / (a * a) + Math.pow((pointY - y0), 2) / (b * b) < 1;
+		
+		isInside = !inEllipse && (inFirstRect || inSecondRect);
+
 		System.out.println(isInside);
 	}
+	
 }

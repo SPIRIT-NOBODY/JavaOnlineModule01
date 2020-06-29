@@ -7,18 +7,34 @@ package module.one.loops;
  */
 
 public class Task05 {
+
 	public static void main(String[] args) {
-		double e = 0.0000051;
-		double summ = 0;
-		int i = 0;
+
+		double e;
+		double summ;
+		int i;
 		double a;
+
+		e = 0.0000051;
+		summ = 0;
+		i = 0;
+
 		do {
+
 			a = (1 / Math.pow(2, i)) + (1 / Math.pow(3, i));
+
 			if (a >= e) {
+
 				summ += a;
+
 			}
+
 			i++;
+
 		} while (a >= e);
+
 		System.out.println("summ = " + summ);
+
 	}
+
 }
