@@ -1,4 +1,4 @@
-package module.one.linear;
+package com.epam.learn.linear;
 
 /**
  * Дано действительное число R вида nnn.ddd (три цифровых разряда в дробной и

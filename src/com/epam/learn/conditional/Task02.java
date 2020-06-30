@@ -1,4 +1,4 @@
-package module.one.conditional;
+package com.epam.learn.conditional;
 
 /**
  * Найти max{min(a, b), min(c, d)}

@@ -1,4 +1,4 @@
-package module.one.conditional;
+package com.epam.learn.conditional;
 
 /**
  * Вычислить значение функции: f(x) = x^2 - 3x + 9 , если x <= 3 и 1 / (x^3 +6),

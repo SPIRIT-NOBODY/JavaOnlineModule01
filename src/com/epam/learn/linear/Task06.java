@@ -1,4 +1,4 @@
-package module.one.linear;
+package com.epam.learn.linear;
 
 import java.util.Scanner;
 

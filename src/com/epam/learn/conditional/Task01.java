@@ -1,4 +1,4 @@
-package module.one.conditional;
+package com.epam.learn.conditional;
 
 /**
  * Даны два угла треугольника (в градусах). Определить, существует ли такой

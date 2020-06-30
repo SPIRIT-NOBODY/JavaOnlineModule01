@@ -1,4 +1,4 @@
-package module.one.loops;
+package com.epam.learn.loops;
 
 import java.util.Arrays;
 

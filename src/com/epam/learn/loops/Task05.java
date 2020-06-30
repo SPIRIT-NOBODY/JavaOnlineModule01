@@ -1,4 +1,4 @@
-package module.one.loops;
+package com.epam.learn.loops;
 
 /**
  * Даны числовой ряд и некоторое число е. Найти сумму тех членов ряда, модуль

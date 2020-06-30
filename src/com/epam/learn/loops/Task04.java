@@ -1,4 +1,4 @@
-package module.one.loops;
+package com.epam.learn.loops;
 
 /**
  * Составить программу нахождения произведения квадратов первых двухсот чисел

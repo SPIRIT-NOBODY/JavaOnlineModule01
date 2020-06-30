@@ -1,4 +1,4 @@
-package module.one.conditional;
+package com.epam.learn.conditional;
 
 /**
  * Заданы размеры А, В прямоугольного отверстия и размеры х, у, z кирпича.

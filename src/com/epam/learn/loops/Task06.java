@@ -1,4 +1,4 @@
-package module.one.loops;
+package com.epam.learn.loops;
 
 /**
  * Вывести на экран соответствий между символами и их численными обозначениями в

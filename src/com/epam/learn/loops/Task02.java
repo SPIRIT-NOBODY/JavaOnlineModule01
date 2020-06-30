@@ -1,4 +1,4 @@
-package module.one.loops;
+package com.epam.learn.loops;
 
 /**
  * Вычислить значения функции на отрезке [а,b] c шагом h: y = x, x>2 и y = -x, x <=2
